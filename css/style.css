@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'coolvetica';
+    src: url('coolvetica rg.ttf');
+}
+
+@font-face {
+    font-family: 'cream';
+    src: url('cream-DEMO.otf');
+}
+
+@font-face {
+    font-family: 'code';
+    src: url('CODE-Bold.otf');
+}
+
+.jumbotron {
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.carousel-item img {
+    margin-top: -1px;
+}
+
+.carousel-item .display-4 {
+    margin-top: -100px;
+}
+
+.carousel-item .carousel-caption {
+    margin-top: -150px;
+}
+
+.jumbotron hr {
+    border-color: #c41c1c;
+    width: 250px;
+    border-width: 3px;
+}
+
+hr {
+    border-color: #5118ad;
+    width: 150px;
+    border-width: 3px;
+}
+
+.tombol {
+    margin-top: -50px;
+    text-align: right;
+}
+
+footer {
+    background-color: #333;
+}
+
+.coolvetica {
+    font-family: 'coolvetica';
+}
+
+.code {
+    font-family: 'code';
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 1em;
+}
