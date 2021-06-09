@@ -104,12 +104,12 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 mt-3">
-          <p> &copy; Copy Right 2021 PT. Liputan69 Cyber Media (Brengkok Gramedia Digital Group). All rights reserved.</p>
+    </div>
+      <div class="row text-center" style="background: rgba(0, 0, 0, 1);">
+        <div class="col-sm-12 mt-3 pt-3 pb-5">
+          <p> &copy; Copy Right 2021 PT. Bumi Harta Internusa. All rights reserved.</p>
         </div>
       </div>
-    </div>
 </footer>
 
     
