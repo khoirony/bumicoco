@@ -7,11 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
 
     <title>PT BUMI HARTA INTERNUSA</title>
   </head>
   <body>
+    <?php 
+      include('sambungan.php');
+    ?>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-5" style="background: rgba(0, 0, 0, 0.1);">
       <div class="container">
       <a class="navbar-brand font-weight-bold" href="#"><img src="images/logo.png" class="w-25"></a>
@@ -75,8 +78,36 @@
     </div>
   <br><br><br><br><br>
   <div class="container">
-  <h1 class="code text-success text-center">DESCRIPTION COMPANY</h1><br>
-  <p class="cream text-secondary mr-5 ml-5 pr-2 pl-2">Indonesia is the largest coconut producer in the world. The 2017 data in The World Atlas notes that the amount of coconut production in Indonesia reaches 19.4 million tonnes. Coconut plant that grows in tropical areas in Indonesia easyly. Coconut is a strategic commodity that has a social, cultural and economic role in the life of Indonesian society. The benefits of the coconut plant lie not only in the flesh that can be processed into coconut milk, copra, and coconut oil, but all parts of the coconut plant have great benefits. The main reason that makes coconut a commercial commodity is because all parts of the coconut can be used for various purposes.</p>
+  <h1 class="code text-success text-center">ABOUT COMPANY</h1><br><br><br>
+  <p class="cream text-secondary text-justify mr-5 ml-5 pr-2 pl-2">Indonesia is the largest coconut producer in the world. The 2017 data in The World Atlas notes that the amount of coconut production in Indonesia reaches 19.4 million tonnes. Coconut plant that grows in tropical areas in Indonesia easyly. Coconut is a strategic commodity that has a social, cultural and economic role in the life of Indonesian society. The benefits of the coconut plant lie not only in the flesh that can be processed into coconut milk, copra, and coconut oil, but all parts of the coconut plant have great benefits. The main reason that makes coconut a commercial commodity is because all parts of the coconut can be used for various purposes. <br><br>
+  PT Bumi Harta Internusa is a consistent exporter of coconut products such as Coconut full Husked, Coconut charcoal briquette, Coconut fiber, and Coconut brooms stick  that conform to the international standards in terms of taste, flavor, effect and applications. We procure these items from the reputed vendors and farmer for export these in the worldwide market, after doing stringent quality inspections and advanced packaging. <br><br>
+We never compromise with the quality of our products and try to achieve total customer satisfaction through sourcing best quality products from branded vendors reckoned as key players in Indonesia Our products are economically priced and we ensure timely delivery at all instances.
+</p>
+  </div>
+
+  <br><br>
+  <br><br>
+
+  <div class="container">
+    <h1 class="text-center text-success">OUR PRODUCT</h1>
+    <div class="row">
+    <?php
+    $sql = "SELECT* FROM produk order by id";
+    $query = mysqli_query($conn, $sql);
+    while ($row = mysqli_fetch_array($query)){
+      $isi=$row['keterangan'];
+      $sebagian=substr($isi, 0, 100);
+    	echo '
+        <div class="col-sm-4 pl-4 pr-4 mb-4 pb-5">
+          <img src="images/'.$row['gambar'].'" class="w-100 rounded-top" ><br>
+          <h5 class="roboto-light">'.$row['nama'].'</h5> <br>
+          <p class="text-justify">'.$sebagian.'</p>
+        </div>
+       <br>
+      ';
+    }
+    ?>
+    </div>
   </div>
 
   <br><br><br><br><br>

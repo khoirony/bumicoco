@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
 @font-face {
     font-family: 'coolvetica';
     src: url('coolvetica rg.ttf');
@@ -11,6 +13,11 @@
 @font-face {
     font-family: 'code';
     src: url('CODE-Bold.otf');
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('Roboto-Light.otf');
 }
 
 .jumbotron {
@@ -55,10 +62,6 @@ footer {
 
 .coolvetica {
     font-family: 'coolvetica';
-}
-
-.code {
-    font-family: 'code';
 }
 
 footer {
