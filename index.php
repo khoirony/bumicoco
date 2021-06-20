@@ -14,30 +14,8 @@
   <body>
     <?php 
       include('sambungan.php');
+      include('navbar.php');
     ?>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-5" style="background: rgba(0, 0, 0, 0.1);">
-      <div class="container">
-      <a class="navbar-brand font-weight-bold" href="#"><img src="images/logo.png" class="w-25"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold mr-2" href="#">HOME</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold mr-2" href="#">ABOUT</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold mr-2" href="#">PRODUCT</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold" href="#">CONTACT</a>
-          </li>
-        </ul>
-      </div></div>
-    </nav>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -77,7 +55,7 @@
       </a>
     </div>
   <br><br><br><br><br>
-  <div class="container">
+  <div class="container" id="about">
   <h1 class="code text-success text-center">ABOUT COMPANY</h1><br><br><br>
   <p class="cream text-secondary text-justify mr-5 ml-5 pr-2 pl-2">Indonesia is the largest coconut producer in the world. The 2017 data in The World Atlas notes that the amount of coconut production in Indonesia reaches 19.4 million tonnes. Coconut plant that grows in tropical areas in Indonesia easyly. Coconut is a strategic commodity that has a social, cultural and economic role in the life of Indonesian society. The benefits of the coconut plant lie not only in the flesh that can be processed into coconut milk, copra, and coconut oil, but all parts of the coconut plant have great benefits. The main reason that makes coconut a commercial commodity is because all parts of the coconut can be used for various purposes. <br><br>
   PT Bumi Harta Internusa is a consistent exporter of coconut products such as Coconut full Husked, Coconut charcoal briquette, Coconut fiber, and Coconut brooms stick  that conform to the international standards in terms of taste, flavor, effect and applications. We procure these items from the reputed vendors and farmer for export these in the worldwide market, after doing stringent quality inspections and advanced packaging. <br><br>
@@ -88,7 +66,7 @@ We never compromise with the quality of our products and try to achieve total cu
   <br><br>
   <br><br>
 
-  <div class="container">
+  <div class="container" id="product">
     <h1 class="text-center text-success">OUR PRODUCT</h1>
     <div class="row">
     <?php
@@ -143,12 +121,5 @@ We never compromise with the quality of our products and try to achieve total cu
       </div>
 </footer>
 
-    
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   </body>
 </html>
