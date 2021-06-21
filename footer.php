@@ -8,14 +8,14 @@
           </div>
           <div class="col-sm text-white pt-5">
             <h5> SITEMAP</h5><br>
-            <a href="/#home" class="text-white font-weight-light">Home</a>  <br>
-            <a href="/about.php" class="text-white font-weight-light">About the company</a>  <br>
-            <a href="/product.php" class="text-white font-weight-light">Our Business</a> 
+            <a href="index.php#" class="text-white font-weight-light">Home</a>  <br>
+            <a href="index.php#about" class="text-white font-weight-light">About the company</a>  <br>
+            <a href="product.php" class="text-white font-weight-light">Our Business</a> 
             <br><br>
           </div>
           <div class="col-sm text-white pt-5">
             <h5> BUSINESS WITH US</h5><br>
-            <a href="/contact.php" class="text-white font-weight-light">Contact us</a> 
+            <a href="contact.php" class="text-white font-weight-light">Contact us</a> 
           </div>
         </div>
       </div>

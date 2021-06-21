@@ -18,47 +18,22 @@
     ?>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      </ol>
       <div class="carousel-inner">
-        <div class="carousel-item">
-          <img src="images/slider1.jpg" class="d-block w-100" style="background: rgba(0, 0, 0, 0.1);" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          
-          <div class="tombol">
-            <h6 class="font-weight-bold">WELCOME TO OUR COMPANY</h6>
-            <h1 class="display-3 font-weight-bold">SPECIALIZED IN COCONUT PRODUCT</h1> 
-            
-          </div>
-          </div>
-        </div>
         <div class="carousel-item active">
           <img src="images/slider2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           <div class="tombol">
-            <h6 class="font-weight-bold">WELCOME TO OUR COMPANY</h6>
-            <h1 class="display-3 font-weight-bold">SPECIALIZED IN COCONUT PRODUCT</h1> 
-            
+            <h1 class="display-3 font-weight-bold  mb-5 pb-5">CONTACT US</h1> 
           </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <br><br>  
 
     <div class="container">
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md">
           <h6>ABOUT THE COMPANY</h6><br>
           <p class="cream text-secondary pr-2">
@@ -67,7 +42,7 @@
           </p>
         </div>
         <div class="col-md">
-          <h6>SEND US A MESSAGE</h6>
+          <h6 class="text-center">SEND US A MESSAGE</h6>
           <hr>
           <form action="/" >
           <div class="form-group" method="post">

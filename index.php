@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="css/style4.css">
 
     <title>BUMI HARTA INTERNUSA</title>
   </head>
@@ -29,7 +29,7 @@
           
           <div class="tombol">
             <h6 class="font-weight-bold">WELCOME TO OUR COMPANY</h6>
-            <h1 class="display-3 font-weight-bold">SPECIALIZED IN COCONUT PRODUCT</h1> 
+            <h1 class="display-3 font-weight-bold mb-5 pb-5">SUPPLYING ACROSS THE GLOBE</h1> 
             
           </div>
           </div>
@@ -39,7 +39,7 @@
           <div class="carousel-caption d-none d-md-block">
           <div class="tombol">
             <h6 class="font-weight-bold">WELCOME TO OUR COMPANY</h6>
-            <h1 class="display-3 font-weight-bold">SPECIALIZED IN COCONUT PRODUCT</h1> 
+            <h1 class="display-3 font-weight-bold mb-5 pb-5">SPECIALIZED IN COCONUT PRODUCT</h1> 
             
           </div>
           </div>
@@ -80,7 +80,7 @@
             <img src="images/'.$row['gambar'].'" class="w-100 rounded-top" >
             <div class="card-body">
               <h6 class="roboto-light text-center">'.$row['nama'].'</h6> <br>
-              '.$sebagian.'... <a href="/#home">Read More</a>
+              '.$sebagian.'... <a href="product.php">Read More</a>
             </div>
           </div>
         </div>
