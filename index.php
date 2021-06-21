@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
-    <title>PT BUMI HARTA INTERNUSA</title>
+    <title>BUMI HARTA INTERNUSA</title>
   </head>
   <body>
     <?php 
@@ -30,7 +30,7 @@
           <div class="tombol">
             <h6 class="font-weight-bold">WELCOME TO OUR COMPANY</h6>
             <h1 class="display-3 font-weight-bold">SPECIALIZED IN COCONUT PRODUCT</h1> 
-            <a href="about.php" class="btn btn-primary">ABOUT THE COMPANY</a>
+            
           </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <div class="tombol">
             <h6 class="font-weight-bold">WELCOME TO OUR COMPANY</h6>
             <h1 class="display-3 font-weight-bold">SPECIALIZED IN COCONUT PRODUCT</h1> 
-            <a href="about.php" class="btn btn-primary">ABOUT THE COMPANY</a>
+            
           </div>
           </div>
         </div>
@@ -56,19 +56,18 @@
     </div>
   <br><br><br><br><br>
   <div class="container" id="about">
-  <h1 class="code text-success text-center">ABOUT COMPANY</h1><br><br><br>
-  <p class="cream text-secondary text-justify mr-5 ml-5 pr-2 pl-2">Indonesia is the largest coconut producer in the world. The 2017 data in The World Atlas notes that the amount of coconut production in Indonesia reaches 19.4 million tonnes. Coconut plant that grows in tropical areas in Indonesia easyly. Coconut is a strategic commodity that has a social, cultural and economic role in the life of Indonesian society. The benefits of the coconut plant lie not only in the flesh that can be processed into coconut milk, copra, and coconut oil, but all parts of the coconut plant have great benefits. The main reason that makes coconut a commercial commodity is because all parts of the coconut can be used for various purposes. <br><br>
-  PT Bumi Harta Internusa is a consistent exporter of coconut products such as Coconut full Husked, Coconut charcoal briquette, Coconut fiber, and Coconut brooms stick  that conform to the international standards in terms of taste, flavor, effect and applications. We procure these items from the reputed vendors and farmer for export these in the worldwide market, after doing stringent quality inspections and advanced packaging. <br><br>
-We never compromise with the quality of our products and try to achieve total customer satisfaction through sourcing best quality products from branded vendors reckoned as key players in Indonesia Our products are economically priced and we ensure timely delivery at all instances.
+  <h2 class="code text-success text-center">DESCRIPTION COMPANY</h2><br><br>
+  <p class="cream text-secondary text-justify mr-5 ml-5 pr-2 pl-2">Indonesia is the largest coconut producer in the world. The 2017 data in The World Atlas notes that the amount of coconut production in Indonesia reaches 19.4 million tonnes. Coconut plant that grows in tropical areas in Indonesia easyly. Coconut is a strategic commodity that has a social, cultural and economic role in the life of Indonesian society. The benefits of the coconut plant lie not only in the flesh that can be processed into coconut milk, copra, and coconut oil, but all parts of the coconut plant have great benefits. The main reason that makes coconut a commercial commodity is because all parts of the coconut can be used for various purposes.
 </p>
   </div>
 
   <br><br>
   <br><br>
 
-  <div class="container" id="product">
-    <h1 class="text-center text-success">OUR PRODUCT</h1>
-    <div class="row">
+  <div class="justify-content-center" id="product">
+    
+    <div class="container">
+    <div class="row justify-content-center">
     <?php
     $sql = "SELECT* FROM produk order by id";
     $query = mysqli_query($conn, $sql);
@@ -76,50 +75,29 @@ We never compromise with the quality of our products and try to achieve total cu
       $isi=$row['keterangan'];
       $sebagian=substr($isi, 0, 100);
     	echo '
-        <div class="col-sm-4 pl-4 pr-4 mb-4 pb-5">
-          <img src="images/'.$row['gambar'].'" class="w-100 rounded-top" ><br>
-          <h5 class="roboto-light">'.$row['nama'].'</h5> <br>
-          <p class="text-justify">'.$sebagian.'</p>
+        <div class="col-sm-4 mb-4 pb-3">
+          <div class="card mr-1 ml-1">
+            <img src="images/'.$row['gambar'].'" class="w-100 rounded-top" >
+            <div class="card-body">
+              <h6 class="roboto-light text-center">'.$row['nama'].'</h6> <br>
+              '.$sebagian.'... <a href="/#home">Read More</a>
+            </div>
+          </div>
         </div>
        <br>
       ';
     }
     ?>
+
+    </div>
     </div>
   </div>
 
-  <br><br><br><br><br>
+  <br><br><br>
 
-  <footer>
-    <div class="container text-center">
-      <div class="container">
-        <div class="row text-left pt-5 pl-2">
-          <div class="col-sm-5 mr-5">
-            <h5 class="text-white"> PT. BUMI HARTA INTERNUSA</h5>
-            <p> We also continue to update the information about the company through social media, for the latest information you can follow our social media.</p>
-            <br>
-          </div>
-          <div class="col-sm text-white">
-            <h5> SITEMAP</h5>
-            <a href="/#home" class="text-white">Home</a>  <br>
-            <a href="/about.php" class="text-white">About the company</a>  <br>
-            <a href="/product.php" class="text-white">Our Business</a> 
-
-            <br><br>
-          </div>
-          <div class="col-sm text-white">
-            <h5> BUSINESS WITH US</h5>
-            <a href="/contact.php" class="text-white">Contact us</a> 
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="row text-center" style="background: rgba(0, 0, 0, 1);">
-        <div class="col-sm-12 mt-3 pt-3 pb-5">
-          <p> &copy; Copy Right 2021 PT. Bumi Harta Internusa. All rights reserved.</p>
-        </div>
-      </div>
-</footer>
-
+  
+    <?php 
+      include('footer.php');
+    ?>
   </body>
 </html>

@@ -45,19 +45,11 @@
     border-width: 3px;
 }
 
-hr {
-    border-color: #5118ad;
-    width: 150px;
-    border-width: 3px;
-}
+hr {}
 
 .tombol {
     margin-top: -50px;
     text-align: right;
-}
-
-footer {
-    background-color: #333;
 }
 
 .coolvetica {
@@ -65,7 +57,7 @@ footer {
 }
 
 footer {
-    background-color: #333;
+    background-color: #000;
     width: 100%;
     padding: 15px;
 }
