@@ -33,27 +33,7 @@
     <br><br>  
 
     <div class="container">
-        <ul class="list-group list-group-flush mt-5">
-        <?php
-        $sql = "SELECT* FROM produk order by id";
-        $query = mysqli_query($conn, $sql);
-        while ($row = mysqli_fetch_array($query)){
-            echo '
-            <li class="list-group-item">
-            <div class="row pt-2 pb-2">
-                <div class="col-sm-4">
-                <div class="card"><img src="images/'.$row['gambar'].'" class="w-100 rounded-top"></div>
-                </div>
-                <div class="col-sm-8">
-                <h6 class="roboto-light text-center">'.$row['nama'].'</h6> <br>
-                '.$row['keterangan'].'
-                </div>
-            </div>
-            </li>';
-        }
-        ?>
-
-        </ul>
+        Selengkapnya disini
     </div>
 
     <br><br><br>

@@ -15,7 +15,7 @@
           </div>
           <div class="col-sm text-white pt-5">
             <h5> BUSINESS WITH US</h5><br>
-            <a href="contact.php" class="text-white font-weight-light">Contact us</a> 
+            <h4 class="fab fa-whatsapp mr-2"></h4> <h4 class="fab fa-instagram"></h4>
           </div>
         </div>
       </div>

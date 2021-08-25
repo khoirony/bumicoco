@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <script src="https://kit.fontawesome.com/c12c059ff2.js" crossorigin="anonymous"></script>
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -25,8 +27,17 @@
           <li class="nav-item active">
             <a class="nav-link font-weight-bold mr-2" href="index.php#about">ABOUT</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link font-weight-bold mr-2" href="product.php">PRODUCT</a>
+          <li class="nav-item dropdown active">
+            <a class="nav-link font-weight-bold mr-2 dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">COCONUT SEMI HUSKED</a></li>
+              <li><a class="dropdown-item" href="#">COCONUT CHARCOAL BRIQUETTE</a></li>
+              <li><a class="dropdown-item" href="#">COCONUT FIBER</a></li>
+              <li><a class="dropdown-item" href="#">COCONUT PEAT</a></li>
+              <li><a class="dropdown-item" href="#">COCONUT BROOMS STICK</a></li>
+            </ul>
           </li>
           <li class="nav-item active">
             <a class="nav-link font-weight-bold" href="contact.php">CONTACT</a>
