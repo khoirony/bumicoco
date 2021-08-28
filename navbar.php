@@ -31,7 +31,7 @@
             <a class="nav-link font-weight-bold mr-2 dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
               PRODUCTS
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <ul class="dropdown-menu rounded-0 mt-3 border-0" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="#">COCONUT SEMI HUSKED</a></li>
               <li><a class="dropdown-item" href="#">COCONUT CHARCOAL BRIQUETTE</a></li>
               <li><a class="dropdown-item" href="#">COCONUT FIBER</a></li>

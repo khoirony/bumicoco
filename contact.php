@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="css/style4.css">
 
     <title>BUMI HARTA INTERNUSA | Contact Us</title>
   </head>
