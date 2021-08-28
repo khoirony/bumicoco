@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/c12c059ff2.js" crossorigin="anonymous"></script>
-
-    <title>Hello, world!</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-5" style="background: rgba(0, 0, 0, 0.1);">
       <div class="container">
-      <a class="navbar-brand font-weight-bold" href="#"><img src="images/logo.png" class="w-25"></a>
+      <a class="navbar-brand font-weight-bold" href="index.php"><img src="images/logo.png" class="w-25"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +38,7 @@
             </ul>
           </li>
           <li class="nav-item active">
-            <a class="nav-link font-weight-bold" href="contact.php">CONTACT</a>
+            <a class="nav-link font-weight-bold" href="contact.php#">CONTACT</a>
           </li>
         </ul>
       </div></div>

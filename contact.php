@@ -34,14 +34,14 @@
 
     <div class="container">
       <div class="row mt-5">
-        <div class="col-md">
+        <div class="col-md-7 pr-5">
           <h6>ABOUT THE COMPANY</h6><br>
           <p class="cream text-secondary pr-2">
           PT Bumi Harta Internusa is a consistent exporter of coconut products such as Coconut full Husked, Coconut charcoal briquette, Coconut fiber, and Coconut brooms stick  that conform to the international standards in terms of taste, flavor, effect and applications. We procure these items from the reputed vendors and farmer for export these in the worldwide market, after doing stringent quality inspections and advanced packaging. <br><br>
           We never compromise with the quality of our products and try to achieve total customer satisfaction through sourcing best quality products from branded vendors reckoned as key players in Indonesia Our products are economically priced and we ensure timely delivery at all instances.
           </p>
         </div>
-        <div class="col-md">
+        <div class="col-md-5">
           <h6 class="text-center">SEND US A MESSAGE</h6>
           <hr>
           <form action="/" >

@@ -10,7 +10,7 @@
             <h5> SITEMAP</h5><br>
             <a href="index.php#" class="text-white font-weight-light">Home</a>  <br>
             <a href="index.php#about" class="text-white font-weight-light">About the company</a>  <br>
-            <a href="product.php" class="text-white font-weight-light">Our Business</a> 
+            <a href="products.php" class="text-white font-weight-light">Our Business</a> 
             <br><br>
           </div>
           <div class="col-sm text-white pt-5">
