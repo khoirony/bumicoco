@@ -43,22 +43,37 @@
         </div>
         <div class="col-md-5">
           <h6 class="text-center">SEND US A MESSAGE</h6>
-          <hr>
-          <form action="/" >
+          <br>
+          <?php 
+            $Msg = "";
+            if(isset($_GET['error'])){
+              $Msg = " Please Fill in the Blanks ";
+              echo '<div class="alert alert-danger">'.$Msg.'</div>';
+            }
+            if(isset($_GET['success'])){
+              $Msg = " Your Message Has Been Sent ";
+              echo '<div class="alert alert-success">'.$Msg.'</div>';
+            } 
+          ?>
+          <form action="process.php" method="post">
           <div class="form-group" method="post">
             <label for="exampleFormControlInput1">YOUR NAME</label>
-            <input type="text" class="form-control border-0">
+            <div class="border-bottom">
+            <input type="text" name="userName" id="userName" class="form-control form-control-sm border-0"></div> <br>
           
             <label for="exampleFormControlInput1">YOUR EMAIL</label>
-            <input type="email" class="form-control border-0">
+            <div class="border-bottom">
+            <input type="email" name="Email" id="Email" class="form-control form-control-sm border-0"></div> <br>
           
             <label for="exampleFormControlInput1">SUBJECT</label>
-            <input type="text" class="form-control border-0">
+            <div class="border-bottom">
+            <input type="text" name="Subject" id="Subject" class="form-control form-control-sm border-0"></div> <br>
           
             <label for="exampleFormControlTextarea1">YOUR MESSAGE</label>
-            <textarea class="form-control border-0" rows="3"></textarea>
+            <div class="border-bottom">
+            <textarea name="msg" id="msg" class="form-control border-0" rows="3"></textarea></div>
           </div>
-          <input class="btn btn-primary" type="submit" name="Submit" value="Submit">
+          <input class="btn btn-primary" type="submit" name="btn-send" value="Submit">
           </form>
         </div>
       </div>

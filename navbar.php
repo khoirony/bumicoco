@@ -30,11 +30,15 @@
               PRODUCTS
             </a>
             <ul class="dropdown-menu rounded-0 mt-3 border-0" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">COCONUT SEMI HUSKED</a></li>
-              <li><a class="dropdown-item" href="#">COCONUT CHARCOAL BRIQUETTE</a></li>
-              <li><a class="dropdown-item" href="#">COCONUT FIBER</a></li>
-              <li><a class="dropdown-item" href="#">COCONUT PEAT</a></li>
-              <li><a class="dropdown-item" href="#">COCONUT BROOMS STICK</a></li>
+              <?php 
+                include('sambungan.php');
+                $sql = "SELECT* FROM produk order by id";
+                $query = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_array($query)){
+                echo '
+                <li><a class="dropdown-item" href="view.php?id='.$row['id'].'">'.$row['nama'].'</a></li>';
+                }
+              ?>
             </ul>
           </li>
           <li class="nav-item active">
@@ -46,5 +50,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
   </body>
 </html>

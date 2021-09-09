@@ -15,7 +15,18 @@
           </div>
           <div class="col-sm text-white pt-5">
             <h5> BUSINESS WITH US</h5><br>
-            <h4 class="fab fa-whatsapp mr-2"></h4> <h4 class="fab fa-instagram"></h4>
+            <a href="mailto:admin@bumicoco.com">
+            <h2 class="far fa-envelope mr-2"></h2>
+            </a> 
+            <a href="http://wa.me/085646611146"> 
+            <h2 class="fab fa-whatsapp mr-2"></h2>
+            </a> 
+            <a href="https://www.instagram.com/bumi.coco">
+            <h2 class="fab fa-instagram mr-2"></h2>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100072189738525"> 
+            <h2 class="fab fa-facebook-square"></h2>
+            </a> 
           </div>
         </div>
       </div>
